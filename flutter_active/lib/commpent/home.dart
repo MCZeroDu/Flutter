@@ -46,7 +46,6 @@ class _HomePage extends State<HomePage> {
 //屏幕适配初始化
   Widget build(BuildContext context) {
     setInit(context);
-    if (formList != null) {
       return Scaffold(
         //定义标题栏
         appBar: AppBar(
@@ -56,21 +55,19 @@ class _HomePage extends State<HomePage> {
           centerTitle: true,
           backgroundColor: Colors.green[700],
         ),
-        body: MainYe(context),
+        body: formList == null?Container( color: Colors.white,) : MainYe(context),
       );
-    }
   }
 
 // The main Ye
   Widget MainYe(context) {
     return Container(
       child: ListView(
-        children: <Widget>[
+        children: <Widget>[ 
           //header Container
           BodyPage(),
           // tow Container
           fuWuPage(),
-          //
           indexOps(formList, context)
         ],
       ),

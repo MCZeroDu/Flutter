@@ -7,11 +7,14 @@ class BottomPage extends StatefulWidget {
   BottomState createState() => BottomState();
 }
 
-List pageList = [HomePage(), fromPage()];
-
+List pageList;
 class BottomState extends State<BottomPage> {
   var _currentIndex = 0;
-
+  @override
+  void initState() {
+    super.initState();
+    pageList = [HomePage(), fromPage()];
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,8 +52,6 @@ class BottomState extends State<BottomPage> {
                   height: 26),
               title: Text('商品分类'),
             ),
-            // BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('首页')),
-            // BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('首页'))
           ]),
     );
   }
