@@ -34,7 +34,7 @@ class fromPageState extends State<fromPage> {
     return Scaffold(
         //  bottomNavigationBar: ,
         appBar: AppBar(
-          title: Text('集市'),
+          title: Text(''),
           centerTitle: true,
           backgroundColor: Colors.green[700],
         ),
@@ -56,7 +56,9 @@ class fromPageState extends State<fromPage> {
                 // height: setHeight(1050),
                 color: Colors.white54,
                 child: ListView(
-                  children: <Widget>[CrtList(context),],
+                  children: <Widget>[
+                    CrtList(context),
+                  ],
                 ),
               ),
             ],
@@ -199,7 +201,7 @@ Widget CrtList(context) {
         child: Column(
           children: <Widget>[
             Container(
-              // color: Colors.yellow,
+              color: Colors.transparent,
               child: Container(
                 width: setWidth(250 * 2),
                 // color: Colors.red[200],
