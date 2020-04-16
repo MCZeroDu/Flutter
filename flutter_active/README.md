@@ -1,16 +1,27 @@
-# flutter_app2
-
-A new Flutter application.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ #### flutter_active -- 商城
+    1: 使用方法
+          git clone https://github.com/qinshige/Flutter.git
+    2：目录
+         lib>
+            main.dart -- 程序入口文件
+            login.dart -- 登录界面
+            cart.dart -- 商品列表
+            commpent>
+                    home.dart -- 首页
+                    from.dart -- 分类页
+                    comm>
+                        bottomBar.dart -- 底部导航栏
+                        commpent>
+                             appBar.dart -- appBar公共组件
+                             indexOps.dart -- 首页服务栏
+                             indexDynameic.dart -- 首页动态栏
+                             indexTuijian.dart -- 首页推荐栏
+            router>
+                    router.dart -- 路由封装
+            utils>
+                    screen.dart -- 屏幕适配 封装
+            
+                    
+                    
+                        
+          

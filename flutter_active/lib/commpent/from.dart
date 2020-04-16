@@ -65,7 +65,7 @@ class fromPageState extends State<fromPage> {
           ),
         ));
   }
-
+  
   List<Map> loveProductList = [
     {
       "url":

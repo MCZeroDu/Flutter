@@ -1,9 +1,9 @@
-import 'package:flutter_app2/commpent/comm/bottomBar.dart';
+import '../commpent/comm/bottomBar.dart';
 import 'package:flutter/material.dart';
 
 var routes = {'/': (context) => BottomPage()};
 
-var onGenerateRoute = (RouteSettings settings) {
+var onGenerateRoute = (RouteSettings settings) { 
   // 统一处理
   final String name = settings.name;
   final Function pageContentBuilder = routes[name];
