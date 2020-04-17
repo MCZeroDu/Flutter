@@ -1,4 +1,5 @@
 //引入适配库插件
+import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 //设置初始化的方法

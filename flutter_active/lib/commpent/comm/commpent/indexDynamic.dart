@@ -10,8 +10,9 @@ import '.././../../utils/screen.dart';
  *  首页农场动态 栏
  */
 
-Widget Dynamic(formList) {
+Widget Dynamic(formList,context) {
   var dataform = formList[4]['acf']['group'];
+  setInit(context);
   return Container(
     height: setHeight(245.0 * 2),
     padding: EdgeInsets.all(10),

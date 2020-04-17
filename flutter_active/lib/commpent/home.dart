@@ -2,11 +2,12 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 // import 'package:flutter_app2/commpent/comm/indexOps.dart';
-import './comm/indexOps.dart';
+import './comm/commpent/indexOps.dart';
 //引入适配库
 import '../utils/screen.dart';
 import 'comm/commpent/indexDynamic.dart';
 import 'comm/commpent/indexTuiJian.dart';
+import 'comm/commpent/indexJingcai.dart';
 import '../commpent/comm/commpent/appBar.dart';
 // 请求后台数据
 Future getDatas() async {
@@ -62,11 +63,11 @@ class _HomePage extends State<HomePage> {
 
 // The main Ye
   Widget MainYe(context) {
-    
     return Container(
       width: getScreenWidth(),
       height: getScreeHeight(),
       child: ListView(
+        // physics: new NeverScrollableScrollPhysics(),
         children: <Widget>[
           //header Container
           BodyPage(),
@@ -74,14 +75,15 @@ class _HomePage extends State<HomePage> {
           fuWuPage(),
           indexOps(formList, context),
           Text_Style('农场推荐',context,'/cart'),
-          Dynamic(formList),
+          Dynamic(formList,context),
           Text_Style('农场动态',context,'/login'),
-          DecommendPage(formList,context)
+          DecommendPage(formList,context),
+          Text_Style('发现精彩',context,''),
+          ViewJingcai(formList,context)
         ],
       ),
     );
   }
-
   bool that;
 //header Container Banner
   Widget BodyPage() {

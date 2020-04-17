@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app2/cart.dart';
-import '../../utils/screen.dart';
+import '../../../utils/screen.dart';
 
 //首页运营位
 Widget indexOps(formList, context) {
@@ -68,7 +68,6 @@ Widget TheMainBody(formList, context) {
                               formList[2]['acf']['item'][1]['image'],
                               fit: BoxFit.fill),
                         ),
-                        //
                       ),
                     ),
                     Container(
